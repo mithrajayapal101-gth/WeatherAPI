@@ -25,9 +25,10 @@ search.addEventListener('click',()=>{
         
         weather.innerHTML=`
                 <h4>${data.name}</h4>
-                <h2>${data.main.temp}C</h2>
+                <h2>${data.main.temp}°C</h2>
                 <h4>${data.weather[0].description}</h4>
                 <h4>Wind speed: ${data.wind.speed}m/s</h4>
+                <h4>Humidity:${data.main.humidity}%</h4>
         `
         
     })
